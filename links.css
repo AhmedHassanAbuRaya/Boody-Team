@@ -1,0 +1,70 @@
+/* Styles specific to the links page (keeps most site-wide styles in Home.css) */
+
+.links-section{
+  padding:2rem 1rem;
+  max-width:900px;
+  margin:1.5rem auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.links-content{
+  width:100%;
+  text-align:center;
+}
+.links-content h1{
+  margin:0 0 .5rem;
+  font-size:1.8rem;
+}
+.links-content p{
+  margin:0 0 1rem;
+  color:#555;
+}
+
+/* Links wrapper */
+.links-wrapper{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  margin-top:1rem;
+  flex-wrap:wrap;
+}
+
+/* Primary call-to-action link */
+.main-link{
+  display:inline-flex;
+  align-items:center;
+  gap:0.75rem;
+  padding:0.9rem 1.1rem;
+  background:var(--brand, #0b63a6);
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+  box-shadow:0 6px 18px rgba(11,99,166,0.12);
+  transition:transform .12s ease, box-shadow .12s ease;
+  font-weight:600;
+}
+.main-link:hover,
+.main-link:focus{
+  transform:translateY(-3px);
+  box-shadow:0 10px 26px rgba(11,99,166,0.16);
+  outline: none;
+}
+.main-link:focus{
+  outline:3px solid rgba(11,99,166,0.18);
+  outline-offset:4px;
+}
+
+/* Icon */
+.link-icon{
+  font-size:1.25rem;
+}
+
+/* Responsive */
+@media (max-width:520px){
+  .main-link{
+    width:100%;
+    justify-content:center;
+  }
+  .links-content h1{font-size:1.4rem}
+}
